@@ -1,0 +1,394 @@
+.navbar {
+    /* background: #3da849; */
+    background: #1ca250;
+}
+
+.nav-link,
+.navbar-brand {
+    color: #f4f4f4;
+    cursor: pointer;
+}
+
+.nav-link {
+    margin-right: 1em !important;
+}
+
+.nav-link :hover {
+    background: #f4f4f4;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar-toggler {
+    background: #fff;
+}
+
+.bg-dark {
+    background-color: #343a40!important
+}
+
+.bg-primary {
+    background-color: #007bff!important
+}
+
+
+/* ---------banner---------- */
+
+#demo {
+    top: 95px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    /* height: 100%; */
+    height: 500px;
+}
+
+
+/* -------welcome-message---------- */
+
+.welcome {
+    margin-top: 100px;
+}
+
+
+/* ---------news-events----------- */
+
+.news-video {
+    margin-top: 75px;
+}
+
+.news {
+    color: white;
+}
+
+
+/* #events-section {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../images/gallery/image1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    padding-top: 110px;
+    padding-bottom: 110px;
+} */
+
+
+/* ----------recent-events------------ */
+
+.blog .carousel-indicators {
+    left: 0;
+    top: auto;
+    bottom: -40px;
+}
+
+
+/* The colour of the indicators */
+
+.blog .carousel-indicators li {
+    background: #a3a3a3;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+}
+
+.blog .carousel-indicators .active {
+    background: #707070;
+}
+
+#recent-events img {
+    height: auto;
+}
+
+
+/* ---------footer-------------- */
+
+section {
+    padding: 60px 0;
+    margin-top: 65px;
+}
+
+section .section-title {
+    text-align: center;
+    color: #1ca250;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#footer {
+    background: #1ca250 !important;
+}
+
+#footer h5 {
+    padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+#footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+#footer ul.social li {
+    padding: 3px 0;
+}
+
+#footer ul.social li a i {
+    margin-right: 5px;
+    font-size: 25px;
+    -webkit-transition: .5s all ease;
+    -moz-transition: .5s all ease;
+    transition: .5s all ease;
+}
+
+#footer ul.social li:hover a i {
+    font-size: 30px;
+    margin-top: -10px;
+}
+
+#footer ul.social li a,
+#footer ul.quick-links li a {
+    color: #ffffff;
+}
+
+#footer ul.social li a:hover {
+    color: #eeeeee;
+}
+
+#footer ul.quick-links li {
+    padding: 3px 0;
+    -webkit-transition: .5s all ease;
+    -moz-transition: .5s all ease;
+    transition: .5s all ease;
+}
+
+#footer ul.quick-links li:hover {
+    padding: 3px 0;
+    margin-left: 5px;
+    font-weight: 700;
+}
+
+#footer ul.quick-links li a i {
+    margin-right: 5px;
+}
+
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+
+@media (max-width:767px) {
+    #footer h5 {
+        padding-left: 0;
+        border-left: transparent;
+        padding-bottom: 0px;
+        margin-bottom: 10px;
+    }
+}
+
+footer .form-control {
+    background-color: #1f2022;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+    border: none;
+    resize: none;
+    color: #d1d2d2;
+    padding: 0.7em 1em;
+}
+
+@media(max-width: 575px) {
+    #footer-form {
+        margin-top: 43px;
+    }
+}
+
+#footer-form fieldset input::placeholder {
+    color: black;
+}
+
+
+/*================ side admission form================= */
+
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+
+.open-button {
+    display: none;
+}
+
+
+/* The popup form - hidden by default */
+
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    left: 20px;
+    border: 3px solid #f1f1f1;
+    z-index: 111;
+    width: 250px;
+}
+
+
+/* Add styles to the form container */
+
+.form-container {
+    max-width: 250px;
+    padding: 10px;
+    background-color: white;
+}
+
+.form-container input {
+    margin: 3px;
+    width: 100%
+}
+
+
+/* When the inputs get focus, do something */
+
+.form-container input[type=text]:focus,
+.form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+
+/* Set a style for the submit/login button */
+
+.form-container .btn {
+    background-color: red;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 180px;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+
+/* Add a red background color to the cancel button */
+
+.form-container .cancel {
+    background-color: transparent;
+    color: black;
+    width: 0px;
+    padding: 0px 21px 0px 0px;
+}
+
+
+/* Add some hover effects to buttons */
+
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}
+
+.branches {
+    margin-left: 3px;
+    width: 169px;
+}
+
+button.btn.cancel {
+    float: right;
+    /* border-radius: 50%; */
+    width: 24px;
+    height: 24px;
+    position: relative;
+    top: -70px;
+    right: -12px;
+    padding: 3px;
+}
+
+.sticky-form {
+    margin-bottom: 0px;
+    font-size: 1.5em;
+}
+
+.branches {
+    width: 100%;
+    margin-left: 2px;
+}
+
+.text-input {
+    width: 100%;
+    margin-left: 2px;
+    border-radius: 2px
+}
+
+
+/* -------------about-school----------- */
+
+.image-aboutus-banner {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("./images/about.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+
+.lg-text {
+    font-size: 52px;
+    font-weight: 600;
+    text-transform: none;
+    color: #fff;
+}
+
+.image-aboutus-para {
+    color: #fff;
+}
+
+
+/* ----------------mission----------- */
+
+.image-mission-banner {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("./images/about.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+
+.lg-text {
+    font-size: 52px;
+    font-weight: 600;
+    text-transform: none;
+    color: #fff;
+}
+
+.image-mission-para {
+    color: #fff;
+}
+
+
+/* ----------------location----------- */
+
+.image-location-banner {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("./images/about.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+
+.lg-text {
+    font-size: 52px;
+    font-weight: 600;
+    text-transform: none;
+    color: #fff;
+}
+
+.image-location-para {
+    color: #fff;
+}
